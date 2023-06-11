@@ -1,8 +1,29 @@
-# React-Todolist
+# Ex-05:
 ## DEVELOP A TO DO LIST USING REACT FRAMEWORK
-## PROGRAM:
-### App.js:
-```
+### AIM:
+The aim of this code is to create a simple To-Do List application using the React framework. The application allows users to add, edit, delete, and mark tasks as completed.
+### ALGORITHM:
+1. Import the necessary dependencies from the React library and the CSS file.
+2. Create a functional component called "App" to represent the To-Do List application.
+3. Initialize the state variables using the useState hook:
+* "tasks" to store an array of tasks
+* "newTask" to store the value of the input field for adding a new task
+* "editTaskId" to store the ID of the task being edited (null if no task is being edited)
+4. Implement functions to handle different actions:
+* "handleAddTask": Creates a new task object and adds it to the tasks array.
+* "handleEditTask": Updates the text of a task with the provided ID.
+* "handleDeleteTask": Removes a task from the tasks array.
+* "handleToggleComplete": Toggles the completed status of a task.
+5. Render the UI elements using JSX:
+* Display a heading for the application.
+* Create an input field and a button for adding new tasks.
+* Render a list of tasks using the map() function on the tasks array.
+* Each task item is displayed as a list item with a checkbox, task text (editable or non-editable), and action buttons for editing and deleting.
+* Conditionally render an input field or a span for the task text, based on whether the task is being edited or not.
+* Apply appropriate CSS classes and styles to the UI elements to achieve the desired layout and functionality.
+### PROGRAM:
+#### App.js:
+```javascript
 import React, { useState } from 'react';
 import './App.css';
 
@@ -100,8 +121,8 @@ function App() {
 }
 export default App;
 ```
-### App.css:
-```
+#### App.css:
+```css
 .todo-app {
   width: 400px;
   margin: 50px auto;
@@ -174,8 +195,11 @@ export default App;
   margin-left: 5px;
 }
 ```
-## OUTPUT:
+### OUTPUT:
 
 <img width="340" alt="image" src="https://github.com/KeerthikaNagarajan/React-Todolist/assets/93427089/1cc733d8-0f12-4221-8926-d9d2c4a7c1b3">
 
 <img width="342" alt="image" src="https://github.com/KeerthikaNagarajan/React-Todolist/assets/93427089/9fa0435c-36d0-4a2f-837d-bb50004f7e25">
+
+### RESULT:
+The code will generate a To-Do List application with a simple user interface. 
